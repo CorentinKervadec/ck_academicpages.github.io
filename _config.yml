@@ -11,7 +11,7 @@ title                    : "Corentin Kervadec"
 title_separator          : "-"
 name                     : &name "Corentin Kervadec"
 description              : &description "AI researcher @ Orange Innovation."
-url                      : https://corentinkervadec.github.io/
+url                      : https://corentinkervadec.github.io/ck_academicpages.github.io/
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "CorentinKervadec/ck_academicpages.github.io"
 teaser                   : "pic_3_full.jpg" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
