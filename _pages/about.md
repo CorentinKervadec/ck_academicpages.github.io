@@ -8,43 +8,50 @@ redirect_from:
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
+👨‍🎓 I defended my PhD in December 2021, under the direction of [Christian Wolf](https://chriswolfvision.github.io/www/) and co-supervised by [Grigory Antipov](https://scholar.google.fr/citations?user=CoOz8K0AAAAJ&hl) and [Moez Baccouche](https://scholar.google.fr/citations?user=olfpe-kAAAAJ&hl) at Orange Labs.
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+<!---👋 I am a PhD candidate at [INSA Lyon](https://www.insa-lyon.fr/) financed by [Orange Labs](https://www.orange.com/fr/accueil) in the [Imagine team (LIRIS)](https://liris.cnrs.fr/equipe/imagine) under the direction of [Christian Wolf](https://perso.liris.cnrs.fr/christian.wolf/).
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+My thesis is also co-supervised by [Grigory Antipov](https://scholar.google.fr/citations?user=CoOz8K0AAAAJ&hl) and [Moez Baccouche](https://scholar.google.fr/citations?user=olfpe-kAAAAJ&hl) from Orange Labs.--->
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+🧠 My thesis is titled [*Bias and Reasoning in Visual Question Answering*](https://tel.archives-ouvertes.fr/tel-03584234v2/document) and focuses on Deep Learning applied to Vision and Language, with a special interest on Visual Reasoning and Visual Question Answering (VQA).
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+<!---📢 **I am looking for a postdoc in ML. I would enjoy working on shortcut learning and/or reasoning models. Please, feel free to contact me ([CV](cv_kervadec_corentin_06_2021.pdf)).** --->
 
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+🍊 I am currently conducting research on NLP x Neurosciences at Orange Innovation.
 
-**Markdown generator**
 
-I have also created [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the academicpages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
+News
+=======
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+🥇 *May 2022*: I have been selected as an outstanding reviewer for CVPR'22 !
 
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
+👨‍🎓 *December 2021*: I successfully defended my PhD titled [*Bias and Reasoning in Visual Question Answering*](https://tel.archives-ouvertes.fr/tel-03584234v2/document)!
 
-For more info
-------
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+📜 *September 2021*: 1 paper accepted at [NeurIPS2021](https://neurips.cc/)! [Supervising the Transfer of Reasoning Patterns in VQA](https://openreview.net/forum?id=kqYiS7HEWfZ)
+
+🥇 *September 2021*: I have been selected as an outstanding reviewer for ICCV'21 (top 5% students)!
+
+📜 *July 2021*: 1 paper accepted at [IEEE VIS2021](http://ieeevis.org/year/2021/welcome)! [VisQA: X-raying Vision and Language Reasoning in Transformers](https://arxiv.org/abs/2104.00926)
+
+👨‍🏫 *June 2021*: I presented a poster about biases and reasoning at the [VQA workshop](https://visualqa.org/workshop.html) at CVPR'21. Watch the [video](https://youtu.be/ABY2InY-RaE) and the [poster](posters/biases_reasoning_vqa.pdf)!
+
+👨‍🏫 *May 2021*: I was invited to give a talk about biases and reasoning in VQA at ["Devil is in the Deeptails"](https://project.inria.fr/ml3ri/dissemination-and-communication/deeptails/) ([slides](https://project.inria.fr/ml3ri/files/2021/06/slides-corentin.pdf) and [video](https://www.youtube.com/watch?v=i8BTiR8rs5Q)).
+
+👨‍🏫 *April 2021*: I gave a talk about VQA and visual reasoning at the GdR ISIS ["Explicabilité et Interprétabilité des méthodes d'Intelligence Artificielle pour la classification et compréhension des scènes visuelles"](http://www.gdr-isis.fr/index.php?page=compte-rendu&idreunion=446) meeting. Slides are available [here](https://github.com/CorentinKervadec/corentinkervadec.github.io/blob/master/slides/GdR_ISIS___Roses_Reasoning__slides_Kervadec_042021.pdf).
+
+📜 *Mars 2021*: 2 papers accepted at [CVPR2021](http://cvpr2021.thecvf.com/)! ["Roses Are Red, Violets Are Blue... but Should Vqa Expect Them To?"](https://arxiv.org/abs/2006.05121) and ["How Transferable are Reasoning Patterns in VQA?"](https://arxiv.org/abs/2104.03656) (checkout our online demo [here](https://reasoningpatterns.github.io/)!)
+
+📜 *June 2020*: New paper on Arxiv! ["Estimating semantic structure for the VQA answer space"](https://arxiv.org/abs/2006.05726)
+
+📜 *January 2020*: One paper accepted at [ECAI20](http://ecai2020.eu/)! ["Weak Supervision helps Emergence of Word-Object Alignment and improves Vision-Language Tasks."](https://arxiv.org/pdf/1912.03063.pdf)
+
+📜 *May 2019*: One paper accepted at [IEEE FG2019](https://fg2019.org/)! ["The Many Variations of Emotion."](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8756560)
+
+👨‍🎓 *October 2018*: Sarting my PhD at INSA Lyon & Orange Labs under the direction of [Christian Wolf](https://perso.liris.cnrs.fr/christian.wolf/) and co-supervised by [Grigory Antipov](https://scholar.google.fr/citations?user=CoOz8K0AAAAJ&hl) and [Moez Baccouche](https://scholar.google.fr/citations?user=olfpe-kAAAAJ&hl).
+
+📜 *July 2018*: One paper accepted at the IAHFAR wotkshop hosted at [BMVC18](http://bmvc2018.org/index.html)! ["CAKE: Compact and Accurate K-dimensional representation of Emotion.](http://bmvc2018.org/contents/workshops/iahfar2018/0037.pdf)
+
+🥉 *June 2018*: Rank 3th at the [Emotion in the Wild 2018 challenge](https://sites.google.com/view/emotiw2018) hosted at [ICMI18](https://icmi.acm.org/2018/)! ["An Occam's Razor View on Learning Audiovisual Emotion Recognition with Small Training Sets."](https://dl.acm.org/doi/pdf/10.1145/3242969.3264980)  
+
+👨‍🎓 *March 2018*, Starting a Master's internship at [Orange Labs](https://www.orange.com/fr/accueil).
